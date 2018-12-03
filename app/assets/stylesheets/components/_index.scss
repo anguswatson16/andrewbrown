@@ -1,3 +1,11 @@
 // Import your components CSS files here.
 @import "alert";
 @import "navbar";
+@import "footer";
+@import "banner";
+
+:root {
+  --main-background-color: #F0EFF4;
+  --main-text-color: #002147;
+  --main-action-color: #FE5F55;
+}
