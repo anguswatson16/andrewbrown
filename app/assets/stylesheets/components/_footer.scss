@@ -25,3 +25,12 @@
 .footer-links a:hover {
   opacity: 1;
 }
+.footer-sign-in a {
+  color: #716969;
+  font-size: 14px;
+  padding: 0px 10px;
+  &:hover {
+    color: #979191;
+    text-decoration: none;
+  }
+}

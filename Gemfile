@@ -18,6 +18,10 @@ gem 'webpacker'
 
 gem 'devise'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-particles.js'
+end
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
