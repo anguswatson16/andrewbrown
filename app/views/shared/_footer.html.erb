@@ -4,4 +4,15 @@
     <a href="#"><i class="fab fa-twitter"></i></a>
     <a href="#"><i class="fab fa-linkedin"></i></a>
   </div>
+  <div class="footer-sign-in">
+    <% if user_signed_in? %>
+      <div class='sign-out'>
+        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "navbar-wagon-item navbar-wagon-link" %>
+      </div>
+    <% else %>
+      <div class="sign-in">
+        <%= link_to 'Sign In', new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      </div>
+    <% end %>
+  </div>
 </div>
