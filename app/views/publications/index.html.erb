@@ -1,0 +1,10 @@
+<h1>Publications Index Page</h1>
+<div class="container">
+  <h1 class="news-header">Publications</h1>
+  <%= link_to 'New Publication', new_publication_path %>
+  <% @publications.each do |publication| %>
+    <%= link_to publication_path(publication.id), method: :get do %>
+      <%= render "shared/publication_card", publication: publication %>
+    <% end %>
+  <% end %>
+</div>

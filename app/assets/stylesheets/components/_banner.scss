@@ -8,28 +8,30 @@
   color: white;
   text-align: center;
   height: 74vh;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    color: $oxford-blue;
+  }
+  h4 {
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    color: #2E4968;
+  }
 }
-.banner h1 {
-  font-size: 50px;
-  font-weight: bold;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  color: var(--main-text-color);
-}
-hr {
+.banner-content {
+  margin-top: 150px;
+  hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-}
-.banner h4 {
-  font-weight: bold;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  color: #2E4968;
+  }
 }
