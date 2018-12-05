@@ -1,0 +1,14 @@
+.story-show-container {
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  transform: translateY(-50%);
+}
+.link-flex-box {
+  display: flex;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: $black-olive;
+  }
+}

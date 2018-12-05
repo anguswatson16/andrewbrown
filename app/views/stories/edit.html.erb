@@ -1,4 +1,8 @@
-<h1>Edit News Story</h1>
-<div class="container">
-  <%= render 'shared/story_form', story: @story %>
+<div class="wrapper">
+  <div class="story-edit-container">
+    <h1>Edit <%= @story.name %></h1>
+    <div class="link-flex-box">
+      <%= render 'shared/story_form', story: @story %>
+    </div>
+  </div>
 </div>

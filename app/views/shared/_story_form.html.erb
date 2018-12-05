@@ -1,9 +1,12 @@
-<%= form_for(story) do |s| %>
-  <%= s.label :name %>
-  <%= s.text_field :name %>
-  <%= s.label :paragraph %>
-  <%= s.text_field :paragraph %>
-  <%= s.label :website %>
-  <%= s.text_field :website %>
+<%= simple_form_for(story) do |s| %>
+  <%= s.input :name,
+              label: "Header",
+              input_html: { class: "edit-form-style" } %>
+  <%= s.input :paragraph,
+              label: "Brief Description",
+              input_html: { class: "edit-form-style" } %>
+  <%= s.input :website,
+              label: "Link",
+              input_html: { class: "edit-form-style" } %>
   <%= s.submit %>
 <% end %>

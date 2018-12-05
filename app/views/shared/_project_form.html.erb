@@ -1,11 +1,15 @@
-<%= form_for(project) do |p| %>
-  <%= p.label :name %>
-  <%= p.text_field :name %>
-  <%= p.label :description %>
-  <%= p.text_field :description %>
-  <%= p.label :collaborators %>
-  <%= p.text_field :collaborators %>
-  <%= p.label :notes %>
-  <%= p.text_field :notes %>
+<%= simple_form_for(project) do |p| %>
+  <%= p.input :name,
+              label: "Name of Project",
+              input_html: { class: "edit-form-style" } %>
+  <%= p.input :description,
+              label: "Brief Description of Project",
+              input_html: { class: "edit-form-style" } %>
+  <%= p.input :collaborators,
+              label: "Project Collaborators",
+              input_html: { class: "edit-form-style" } %>
+  <%= p.input :notes,
+              label: "Details of Project",
+              input_html: { class: "edit-form-style" } %>
   <%= p.submit %>
 <% end %>

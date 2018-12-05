@@ -14,7 +14,7 @@
 }
 
 // Base styles
-.project-card {
+.publication-card {
   width: 100%;
   margin-bottom: 80px;
   .menu-content {
@@ -38,7 +38,7 @@
       transform: translate(-50%, 0);
     }
   }
-  .project-card-wrapper {
+  .publication-card-wrapper {
     background-color: white;
     min-height: 360px;
     position: relative;
@@ -46,34 +46,34 @@
     box-shadow: 0 1px 1px rgba($black-olive, 0.3), 0 1px 1px rgba($black-olive, 0.2);
     margin: 0 20px;
     &:hover {
-      .project-data {
+      .publication-data {
         transform: translateY(0);
       }
     }
   }
-  .project-data {
+  .publication-data {
     position: absolute;
     bottom: 0;
     width: 100%;
     transform: translateY(calc(70px + 1em));
     transition: transform 0.3s;
-    .project-content {
+    .publication-content {
       padding: 1em;
       position: relative;
       z-index: 1;
     }
   }
-  .project-name {
+  .publication-name {
     font-size: 12px;
   }
-  .project-description {
+  .publication-description {
     margin-top: 10px;
   }
-  .project-collaborators {
+  .publication-collaborators {
     height: 70px;
     margin: 0;
   }
-  .project-notes {
+  .publication-notes {
     height: 70px;
     margin: 0 0 100 0px;
   }
@@ -86,7 +86,7 @@
 }
 // Second example styles
 .example-2 {
-  .project-card-wrapper {
+  .publication-card-wrapper {
     box-shadow: 1px 1px 1px 1px $black-olive;
     &:hover {
       .menu-content {
@@ -108,11 +108,11 @@
       opacity: 0;
     }
   }
-  .project-data {
+  .publication-data {
     color: $black-olive;
     transform: translateY(calc(70px + 4em));
   }
-  .project-description {
+  .publication-description {
     a {
       color: $black-olive;
     }

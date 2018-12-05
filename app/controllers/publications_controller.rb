@@ -1,4 +1,6 @@
 class PublicationsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
+
   def index
     @publications = Publication.all
   end
@@ -33,6 +35,7 @@ class PublicationsController < ApplicationController
   def destroy
     @publication = Publication.find(params[:id])
     @publication.destroy
+    redirect_to publications_path
   end
 
   private
