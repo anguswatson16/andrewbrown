@@ -1,0 +1,9 @@
+<%= form_for(story) do |s| %>
+  <%= s.label :name %>
+  <%= s.text_field :name %>
+  <%= s.label :paragraph %>
+  <%= s.text_field :paragraph %>
+  <%= s.label :website %>
+  <%= s.text_field :website %>
+  <%= s.submit %>
+<% end %>

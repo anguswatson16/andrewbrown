@@ -3,9 +3,5 @@
 @import "navbar";
 @import "footer";
 @import "banner";
-
-:root {
-  --main-background-color: #F0EFF4;
-  --main-text-color: #002147;
-  --main-action-color: #FE5F55;
-}
+@import "story_card";
+@import "project_card";

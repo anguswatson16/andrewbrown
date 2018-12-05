@@ -14,6 +14,7 @@
 .footer-links {
   display: flex;
   align-items: center;
+  padding: 0px 10px;
 }
 .footer-links a {
   color: black;
@@ -33,4 +34,7 @@
     color: #979191;
     text-decoration: none;
   }
+}
+.footer-andrew-brown-sign-out {
+  padding-right: 50px !important;
 }

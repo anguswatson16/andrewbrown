@@ -1,0 +1,11 @@
+<div class="container">
+  <h1 class="project-header">Projects</h1>
+  <%= link_to 'New Project', new_project_path %>
+  <% @projects.each do |project| %>
+    <div class="row">
+      <%= link_to project_path(project.id), method: :get do %>
+        <%= render "shared/project_card", project: project %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
