@@ -1,3 +1,10 @@
-<h1>This is the <%= @publication.name %> show page</h1>
-<%= link_to "Delete", publication_path, method: :delete %>
-<%= link_to "Edit", edit_publication_path %>
+<div class="wrapper">
+  <div class="publication-show-container">
+    <h1><%= @publication.name %></h1>
+    <div class="link-flex-box">
+      <%= link_to "Delete", publication_path, method: :delete %>
+      <%= link_to "Edit", edit_publication_path %>
+    </div>
+  </div>
+</div>
+

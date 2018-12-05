@@ -1,4 +1,8 @@
-<h1>Edit Publication</h1>
-<div class="container">
-  <%= render 'shared/publication_form', publication: @publication %>
+<div class="wrapper">
+  <div class="publication-edit-container">
+    <h1>Edit <%= @publication.name %></h1>
+    <div class="link-flex-box">
+      <%= render 'shared/publication_form', publication: @publication %>
+    </div>
+  </div>
 </div>

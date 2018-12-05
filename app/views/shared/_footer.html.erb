@@ -6,8 +6,25 @@
   </div>
   <div class="footer-sign-in">
     <% if user_signed_in? %>
-      <div class='sign-out'>
-        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "navbar-wagon-item navbar-wagon-link footer-andrew-brown-sign-out" %>
+      <div class="user-actions">
+        <div class="new-story">
+          <% if current_user %>
+            <%= link_to 'New Story', new_story_path %>
+          <% end %>
+        </div>
+        <div class="new-project">
+          <% if current_user %>
+            <%= link_to 'New Project', new_project_path %>
+          <% end %>
+        </div>
+        <div class="new-publication">
+          <% if current_user %>
+            <%= link_to 'New Publication', new_publication_path %>
+          <% end %>
+        </div>
+        <div class='sign-out'>
+          <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "navbar-wagon-item navbar-wagon-link footer-andrew-brown-sign-out" %>
+        </div>
       </div>
     <% else %>
       <div class="sign-in">

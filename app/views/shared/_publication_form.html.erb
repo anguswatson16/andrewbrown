@@ -1,13 +1,15 @@
-<%= form_for(publication) do |p| %>
-  <%= p.label :name %>
-  <%= p.text_field :name %>
-  <%= p.label :description %>
-  <%= p.text_field :description %>
-  <%= p.label :website %>
-  <%= p.text_field :website %>
-  <%= p.label :collaborators %>
-  <%= p.text_field :collaborators %>
-  <%= p.label :journal %>
-  <%= p.text_field :journal %>
+<%= simple_form_for(publication) do |p| %>
+  <%= p.input :name,
+              label: "Name of Publication",
+              input_html: { class: "edit-form-style" } %>
+  <%= p.input :description,
+              label: "Brief Description of Publication",
+              input_html: { class: "edit-form-style" } %>
+  <%= p.input :collaborators,
+              label: "Publication Collaborators",
+              input_html: { class: "edit-form-style" } %>
+  <%= p.input :journal,
+              label: "Journal Published In",
+              input_html: { class: "edit-form-style" } %>
   <%= p.submit %>
 <% end %>
