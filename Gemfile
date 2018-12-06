@@ -18,6 +18,10 @@ gem 'webpacker'
 
 gem 'devise'
 
+gem 'cloudinary', '~> 1.9.1'
+
+gem 'carrierwave', '~> 1.2'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-particles.js'
 end
