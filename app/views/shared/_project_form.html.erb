@@ -11,5 +11,7 @@
   <%= p.input :notes,
               label: "Details of Project",
               input_html: { class: "edit-form-style" } %>
+  <%= p.input :photo %>
+  <%= p.input :photo_cache, as: :hidden %>
   <%= p.submit %>
 <% end %>

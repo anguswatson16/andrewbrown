@@ -1,5 +1,6 @@
 <div class="example-2 project-card">
-  <div class="project-card-wrapper">
+  <div class="project-card-wrapper" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path project.photo, width: 700, height: 600, crop: :fit%>')">
     <div class="project-data">
       <div class="project-content">
         <span class="project-name"><%= project.name %></span>

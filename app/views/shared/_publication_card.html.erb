@@ -1,5 +1,7 @@
 <div class="example-2 publication-card">
-  <div class="publication-card-wrapper">
+  <div class="publication-card-wrapper" style="
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path publication.photo, height: 300, width: 400, crop: :limit %>')">
     <div class="publication-data">
       <div class="publication-content">
         <span class="publication-name"><%= publication.name %></span>
