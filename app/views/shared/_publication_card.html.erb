@@ -1,13 +1,15 @@
 <div class="example-2 publication-card">
+  <% if publication.photo? %>
   <div class="publication-card-wrapper" style="
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
          url('<%= cl_image_path publication.photo, height: 300, width: 400, crop: :limit %>')">
+  <% end %>
     <div class="publication-data">
       <div class="publication-content">
         <span class="publication-name"><%= publication.name %></span>
         <h1 class="publication-description"><%= publication.description %></h1>
         <p class="publication-collaborators"><%= publication.collaborators %></p>
-        <p class="publication-notes"><%= publication. %></p>
+        <p class="publication-notes"><%= publication.journal %></p>
       </div>
     </div>
   </div>
