@@ -1,4 +1,4 @@
-{
+var config = {
   "particles": {
     "number": {
       "value": 50,
@@ -108,3 +108,5 @@
   },
   "retina_detect": true
 }
+
+particlesJS("particles-js", config);
