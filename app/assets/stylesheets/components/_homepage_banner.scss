@@ -7,31 +7,60 @@
 .banner {
   color: white;
   text-align: center;
-  height: 74vh;
+  height: 65vh;
   background-size: cover !important;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 7%;
+  justify-content: space-around;
   h1 {
     font-size: 50px;
     font-weight: bold;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
     color: $oxford-blue;
+    text-decoration: underline;
   }
   h4 {
     font-weight: bold;
     text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-    color: #2E4968;
+    color: $oxford-blue;
+    opacity: 0.9;
   }
 }
-.banner-content {
-  margin-top: 150px;
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+.profile {
+  text-align: center;
+  width: 45%;
+}
+.profile_image {
+  // margin-top: 150px;
+  // margin-right: 20%;
+  // border-radius: 50%;
+  // height: 50%;
+  // width: 50%;
+  // overflow: hidden;
+  padding-left: 5%;
+  text-align: center;
+  // justify-content: center;
+  // align-items: center;
+}
+.profile_info {
+  display: inline-block;
+  p {
+    color: $black-olive;
+    width: 90%;
+    text-align:justify;
   }
+}
+.text-container {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rounded {
+  // margin-left: 50%;
+  border-radius: 50%;
+  max-width: 500px;
+  max-height: 500px;
+  width: 100%;
+  height: auto;
 }

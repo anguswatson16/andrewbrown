@@ -1,24 +1,26 @@
 <div class="navbar-andrew-brown navbar-fixed-top">
-  <a href="http://www.ox.ac.uk/" class="navbar-andrew-brown-logo">
+  <!-- <a href="http://www.ox.ac.uk/" class="navbar-andrew-brown-logo">
     <%= image_tag 'university-of-oxford-logo.png' %>
-  </a>
+  </a> -->
+
+  <!-- Fill out empty space left by logo -->
+  <a href="" class="navbar-andrew-brown-logo"></a>
 
   <div class="navbar-andrew-brown-right hidden-xs hidden-sm">
     <%= link_to "Home", root_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link' %>
-    <%= link_to "About", about_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link' %>
-    <%= link_to "News", stories_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link' %>
+<!--     <%= link_to "About", about_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link' %> -->
+<!--     <%= link_to "News", stories_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link' %> -->
     <%= link_to "Projects", projects_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link' %>
     <%= link_to "Publications", publications_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link' %>
     <%= link_to "CV", cv_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link' %>
 
-    <!-- Profile picture with dropdown list -->
-    <div class="navbar-andrew-brown-item">
+    <!-- Profile picture -->
+<!--     <div class="navbar-andrew-brown-item">
       <div class="navbar-andrew-brown-right hidden-xs hidden-sm">
         <%= link_to "Andrew Brown", root_path, class: 'navbar-andrew-brown-item navbar-andrew-brown-link navbar-andrew-brown-name-link' %>
-      </div>
+      </div> -->
     </div>
   </div>
-
   <!-- Dropdown appearing on mobile only -->
   <div class="navbar-andrew-brown-item hidden-md hidden-lg">
     <div class="dropdown">
@@ -33,4 +35,5 @@
       </ul>
     </div>
   </div>
+
 </div>

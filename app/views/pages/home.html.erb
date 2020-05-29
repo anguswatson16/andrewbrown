@@ -1,1 +1,16 @@
 <%= render 'shared/homepage_banner' %>
+<div class="container">
+  <h3>News</h3>
+  <hr>
+  <div class="stories-card-container">
+    <% @stories.each do |story| %>
+      <% if current_user %>
+        <%= link_to story_path(story.id), method: :get do %>
+          <%= render "shared/story_card", story: story %>
+        <% end %>
+      <% else %>
+        <%= render "shared/story_card", story: story %>
+      <% end %>
+    <% end %>
+  </div>
+</div>
